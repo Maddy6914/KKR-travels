@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKR Travels - Your Epic Journey Begins Now</title>
+    <link rel="stylesheet" type="text/css" href="kkr.css">
+</head>
+<body>
+
+    <header>
+        <h1>KKR TRAVELS</h1>
+        <p>Your Epic Journey Begins Now</p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <!-- Your home section content goes here -->
+        </section>
+
+        <section id="tour-planner">
+            <h2>Plan Your Route</h2>
+            <label for="start">Starting Point:</label>
+            <input type="text" id="start" name="start" required>
+        
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+        
+            <button onclick="planRoute()">Plan Route</button>
+        </section>
+
+        <div class="user-buttons">
+            <button onclick="login()">Login</button>
+            <button onclick="signup()">Sign Up</button>
+        </div>
+
+        <!-- Rest of your existing HTML content... -->
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="your-logo.png" alt="Your Travel Logo">
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2024 Your Travel Company</p>
+                <p>Address: 123 Adventure Street, City</p>
+                <p>Email: info@yourtravel.com</p>
+                <p>Phone: +1 23 456 7890</p>
+            </div>
+            <div class="social-icons">
+                <a href="#" target="_blank"><img src="facebook-.webp" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="twitter.webp" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="instagram-.webp" alt="Instagram"></a>
+                <!-- Add more social media icons here -->
+            </div>
+        </div>
+    </footer>
+    
+        
+
+    <!-- Your existing scripts... -->
+
+    <script>
+        // Change header background and nav link color on scroll
+        document.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const navLinks = document.querySelectorAll('nav a');
+
+            if (window.scrollY > 50) {
+                header.style.background = '#333';
+                navLinks.forEach(link => link.style.color = '#fff');
+            } else {
+                header.style.background = 'url("your-live-background-image.jpg") center center fixed';
+                navLinks.forEach(link => link.style.color = '#fff');
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('your-live-background-image.jpg') center center fixed;
+  background-size: cover;
+  color: #c2f606; /* Updated magical blue color for KKR Travels */
+  transition: background 0.5s;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.user-buttons {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+.user-buttons button {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  background-color: #eb3b0b;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.user-buttons button:hover {
+  background-color: #2c3e50; /* Darker shade on hover */
+}
+
+main {
+  padding: 20px;
+}
+
+#tour-planner {
+  text-align: center;
+  padding: 50px 20px;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+#tour-planner label,
+#tour-planner input,
+#tour-planner button {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+#tour-planner button {
+  background-color: #ffcc00;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+#tour-planner button:hover {
+  background-color: #000;
+  color: #ffcc00;
+}
+
+header {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #3498db; /* Blue background color */
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('drift.gif') center center fixed;
+  background-size: cover;
+  filter: blur(8px);
+}
+
+header h1 {
+  font-size: 3em;
+  margin: 0;
+  z-index: 1;
+}
+
+header p {
+  font-size: 1.5em;
+  margin: 20px 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+#tour-planner,
+#login-signup {
+  text-align: center;
+  padding: 50px 0;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for better readability */
+}
+
+#tour-planner label,
+#tour-planner input,
+#tour-planner button,
+#login-signup label,
+#login-signup input,
+#login-signup button {
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #3498db; /* Blue background color */
+}
+
+footer p {
+  margin: 0;
+}
